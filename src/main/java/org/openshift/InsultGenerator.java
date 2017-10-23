@@ -14,7 +14,7 @@ public class InsultGenerator {
 		try {
 			String mysqlHost=System.getenv("MYSQL_HOST");
 			String mysqlDB=System.getenv("MYSQL_DATABASE");
-			String mysqlUser=System.getenv("MYSQL_USERNAME");
+			String mysqlUser=System.getenv("MYSQL_USER");
 			String mysqlPassword=System.getenv("MYSQL_PASSWORD");
 			String jdbcConnectString="jdbc:mariadb://"+mysqlHost+":3306/"+mysqlDB+"?user="+mysqlUser+"&password="+mysqlPassword;
 			System.out.println("Connecting to mysql serever: "+jdbcConnectString);
